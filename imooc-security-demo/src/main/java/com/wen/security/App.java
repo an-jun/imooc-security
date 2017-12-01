@@ -1,15 +1,18 @@
 package com.wen.security;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.wen.security.dto.HttpWenService;
+import com.wen.security.core.properties.SecurityProperties;
 
-import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @SpringBootApplication
 public class App {
+
+	
 	public static void main(String[] args) {
 		SpringApplication.run(App.class, args);
 		System.out.println("hello world");
-		System.out.println(HttpWenService.htmlFiter(HttpWenService.httpRequest("")));
+
+	//	System.out.println(HttpWenService.htmlFiter(HttpWenService.httpRequest("")));
 	}
 }

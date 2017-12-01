@@ -22,7 +22,7 @@ public class UserTest extends BaseTest{
 	public void setup() {
 		mockMvc = MockMvcBuilders.webAppContextSetup(wac).build();
 	}
-	@Test
+	//@Test
 	public void whenQuerySuccess() throws Exception {
 		String result=mockMvc.perform(MockMvcRequestBuilders.get("/user")
 					.param("username", "小明")
@@ -33,7 +33,7 @@ public class UserTest extends BaseTest{
 		System.out.println(result);
 	}
 	
-	@Test
+	//@Test
 	public void getUserInfo() throws Exception {
 		String result=mockMvc.perform(MockMvcRequestBuilders.get("/user/1")
 					.contentType(MediaType.APPLICATION_JSON_UTF8))
@@ -45,7 +45,7 @@ public class UserTest extends BaseTest{
 	/**
 	 * 用户创建请求
 	 */
-	@Test
+	//@Test
 	public void whenCreateSuccess() {
 		String content="{\"username\":\"tom\",\"id\":1}";
 		try {
@@ -63,7 +63,7 @@ public class UserTest extends BaseTest{
 			e.printStackTrace();
 		}
 	}
-		@Test  //put  请求做修改  
+		//@Test  //put  请求做修改  
 		public void whenUpdateSuccess() {
 			//传入后一年的时间
 			Date date=new Date(LocalDateTime.now().plusYears(1).atZone(ZoneId.systemDefault()).toInstant().toEpochMilli());
@@ -81,7 +81,7 @@ public class UserTest extends BaseTest{
 				e.printStackTrace();
 			}
 	}
-		@Test
+		//@Test
 		public void whenUploadSuccess() {
 			try {
 

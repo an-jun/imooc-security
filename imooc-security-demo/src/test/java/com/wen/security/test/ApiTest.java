@@ -16,7 +16,7 @@ public class ApiTest extends BaseTest{
 	public void setup() {
 		mockMvc = MockMvcBuilders.webAppContextSetup(wac).build();
 	}
-		@Test  //put  请求做修改  
+		//@Test  //put  请求做修改  
 		public void whenUpdateSuccess() {
 			//\"sourceSyetem\":syetem,\"leUniversal\":universal,\"mrcUniversal\":universal
 			String content="{\"fiscalYear\":\"Year\",\"perion\":\"ion\",\"sourceSyetem\":\"syetem\",\"leUniversal\":\"\",\"mrcUniversal\":\"universal\"}";
@@ -29,7 +29,7 @@ public class ApiTest extends BaseTest{
 				e.printStackTrace();
 			}
 	    }
-		@Test  //put  请求做修改  
+		//@Test  //put  请求做修改  
 		public void whenSuccess() {
 			//\"sourceSyetem\":syetem,\"leUniversal\":universal,\"mrcUniversal\":universal
 			String content="{\"userId\":\"Id\",\"universalLedger\":\"Ledger\",\"leUniversal\":\"Universal\",\"leLocal\":\"Local\",\"mrcUniversal\":\"mUniversal\",\"fiscalYear\":\"Year\",\"period\":\"riod\",\"sourceSystem\":\"System\",\"accountType\":\"acType\",\"accountsTo\":\"\",\"userInput\":\"Input\",\"globalFunctionalArea\":\"\"}";

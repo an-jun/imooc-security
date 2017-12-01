@@ -33,6 +33,7 @@ public class TimeFilter implements  Filter{
 	 * 创建方法
 	 */
 	public void init(FilterConfig arg0) throws ServletException {
+		
 		System.out.println("Filter init");
 	}
 }
